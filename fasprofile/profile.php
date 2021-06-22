@@ -3,7 +3,7 @@ include "../backend/include/conn.php";
 session_start();
 $username = $_GET['username'];
 if (!isset($_SESSION[$username])) {
-    header('location: ../login.php');
+    header('location: ../index.php');
 }
 function role(){
 $sql = "SELECT  * FROM `users` WHERE username = '$username' ";
@@ -41,7 +41,7 @@ if ($total != 0) {
                     <div id="navbarCollapse" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
 
-                            <a href="http://localhost/FAS/teacherhome.php"><img src="../dylogo.png" style="width:10rem; height:4rem"></a>
+                            <a href="teacherhome.php"><img src="../dylogo.png" style="width:10rem; height:4rem"></a>
 
                         </ul>
 

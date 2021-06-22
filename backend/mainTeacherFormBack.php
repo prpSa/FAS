@@ -188,7 +188,7 @@ if (isset($_POST['save'])) {
         if($mail->send()){
             echo '<script type="text/javascript">'; 
             echo 'alert("ThankYou for Your Response");'; 
-            echo 'window.open("http://localhost/FAS/teacherhome.php?username='.$username.'","_self");';
+            echo 'window.open("teacherhome.php?username='.$username.'","_self");';
             echo '</script>';
             exit();
         }else{
@@ -200,7 +200,7 @@ if (isset($_POST['save'])) {
                text: "",
                type: "success"
            }).then(function() {
-               window.open("http://localhost/FAS/teacherome.php?username='.$username.'","_self");;
+               window.open("teacherome.php?username='.$username.'","_self");;
            });
            
            </script>';
@@ -364,7 +364,7 @@ if (isset($_POST['save'])) {
 
         echo '<script type="text/javascript">'; 
         echo 'alert("ThankYou for Your Response");'; 
-        echo 'window.open("http://localhost/FAS/teacherhome.php?username='.$username.'","_self");';
+        echo 'window.open("teacherhome.php?username='.$username.'","_self");';
         echo '</script>';
         exit;
     }

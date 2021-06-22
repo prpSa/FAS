@@ -18,7 +18,7 @@
       $stmt->execute();
       echo '<script type="text/javascript">'; 
         echo 'alert("Registration Successful");'; 
-        echo 'window.open("http://localhost/FAS/login.php","_self");';
+        echo 'window.open("index.php","_self");';
         echo '</script>';
       $stmt->close();
       $conn->close();
@@ -26,7 +26,7 @@
     else{
         echo '<script type="text/javascript">'; 
         echo 'alert("Password and Confirm password do not match");'; 
-        echo 'window.open("http://localhost/FAS/signup.php","_self");';
+        echo 'window.open("signup.php","_self");';
         echo '</script>';
     }
   }

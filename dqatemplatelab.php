@@ -13,13 +13,13 @@
             // ###################################################################################################
 
             if(strcmp($result['teacher'],"submitted")===0){
-                echo '<a href="http://localhost/FAS/dqaTeamlab.php?courseID='.$courseID.'&username='.$username.'" ><button id="teaOrange">Form submitted </button></a>';
+                echo '<a href="dqaTeamlab.php?courseID='.$courseID.'&username='.$username.'" ><button id="teaOrange">Form submitted </button></a>';
             }
             else if(strcmp($result['teacher'], "Nsubmitted") === 0){
                 echo '<a href="#" ><button id="teaGrey">Form submitted</button></a>';
             }
             else if(strcmp($result['teacher'], "approved") === 0){
-                echo '<a href="http://localhost/FAS/dqaFinalTeacherReslab.php?courseID='.$courseID.'&username='.$username.'" ><button id="teaGreen"> Form Approved </button></a>';
+                echo '<a href="dqaFinalTeacherReslab.php?courseID='.$courseID.'&username='.$username.'" ><button id="teaGreen"> Form Approved </button></a>';
             }
 
 
@@ -28,7 +28,7 @@
             // ###################################################################################################
 
 
-            echo '<a href="http://localhost/FAS/dqaTeaResFinalDqalab.php?courseID='.$courseID.'&username='.$username.'"><button id="viewForm">View Response</button></a>';
+            echo '<a href="dqaTeaResFinalDqalab.php?courseID='.$courseID.'&username='.$username.'"><button id="viewForm">View Response</button></a>';
 
 
 
@@ -51,7 +51,7 @@
                 //                                     Hod 
                 // ###################################################################################################
         
-                echo '<a href="http://localhost/FAS/hodDqaFeedlab.php?courseID='.$courseID.'&username='.$username.'"><button id="button2">HOD Response</button></a>';
+                echo '<a href="hodDqaFeedlab.php?courseID='.$courseID.'&username='.$username.'"><button id="button2">HOD Response</button></a>';
         
             }
         } else {

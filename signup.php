@@ -150,7 +150,7 @@
                 <button class="btn btn-lg btn-dark btn-block text-uppercase" type="submit" style="font-size:15px;">Sign up</button>
                 <hr class="my-4">
                 <h6 class="card-text text-center">Already have an account? </h6></b>
-                <a href="http://localhost/FAS/login.php" class="btn  btn-danger btn-block text-uppercase" type="submit" style="font-size:15px;">sign-in</a>
+                <a href="index.php" class="btn  btn-danger btn-block text-uppercase" type="submit" style="font-size:15px;">sign-in</a>
               </form>
             </div>
           </div>

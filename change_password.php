@@ -4,7 +4,7 @@ $username = $_GET['username'];
 $_SESSION['username'] = $username ;
 // echo $_SESSION['username'] ;
 if (!isset($_SESSION[$username])) {
-    header('location: login.php');
+    header('location: index.php');
 }
 ?>
 <!DOCTYPE html>

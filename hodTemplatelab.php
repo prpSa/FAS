@@ -9,18 +9,18 @@
         while($result=mysqli_fetch_assoc($data)) {
 
         if (strcmp($result['teacher'], "submitted") === 0 || strcmp($result['teacher'], "Nsubmitted") === 0) {
-            echo '<a href="http://localhost/FAS/hodTeaReslab.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaOrange">Form submitted</button></a>';
+            echo '<a href="hodTeaReslab.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaOrange">Form submitted</button></a>';
 
             if (strcmp($result['dqa'], "Napproved") === 0) {
-                echo '<a href="http://localhost/FAS/hodDqaReslab.php?username='.$username.'&courseID='.$courseID.'" ><button id="dqaOrange">DQA Team</button></a>';
+                echo '<a href="hodDqaReslab.php?username='.$username.'&courseID='.$courseID.'" ><button id="dqaOrange">DQA Team</button></a>';
             }else{
                 echo '<a href="#" ><button id="dqaRed">DQA Team</button></a>';
             }
 
         } 
         else if(strcmp($result['teacher'], "approved") === 0){
-            echo '<a href="http://localhost/FAS/hodTeaFinalReslab.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaGreen">Form Approved</button></a>';
-            echo '<a href="http://localhost/FAS/hodDqaFinalReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="dqaGreen">DQA Team</button></a>';
+            echo '<a href="hodTeaFinalReslab.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaGreen">Form Approved</button></a>';
+            echo '<a href="hodDqaFinalReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="dqaGreen">DQA Team</button></a>';
         }
         else {
             echo'<button id="buttonn1">Form not submitted</button>';
@@ -34,7 +34,7 @@
     //         echo '<a href="hodViewDoc.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaDocOrange">Docs Uploaded</button></a>';
 
     //         if (strcmp($result['intAudit'], "Napproved") === 0) {
-    //             echo '<a href="http://localhost/FAS/hodAudRes.php?username='.$username.'&courseID='.$courseID.'" ><button id="intAudOrange">Internal Auditor</button></a>';
+    //             echo '<a href="hodAudRes.php?username='.$username.'&courseID='.$courseID.'" ><button id="intAudOrange">Internal Auditor</button></a>';
     //         }else{
     //             echo '<a href="#" ><button id="intAudRed">Internal Auditor</button></a>';
     //         }
@@ -63,7 +63,7 @@
     //         echo '<a href="hodViewDocII.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaDocOrange">Docs Uploaded</button></a>';
 
     //         if (strcmp($result['intAuditII'], "Napproved") === 0) {
-    //             echo '<a href="http://localhost/FAS/hodAudResII.php?username='.$username.'&courseID='.$courseID.'" ><button id="intAudOrange">Internal Auditor II</button></a>';
+    //             echo '<a href="hodAudResII.php?username='.$username.'&courseID='.$courseID.'" ><button id="intAudOrange">Internal Auditor II</button></a>';
     //         }else{
     //             echo '<a href="#" ><button id="intAudRed">Internal Auditor II</button></a>';
     //         }

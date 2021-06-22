@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 offset-md-4 form login-form" style="margin-left: 29.333333%;">
-                <form action="login.php" method="POST" autocomplete="">
+                <form action="index.php" method="POST" autocomplete="">
                     <h2 class="text-center">Login Form</h2>
                     <p class="text-center">Login with your email and password.</p>
                     <?php

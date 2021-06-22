@@ -100,32 +100,32 @@ if(isset($_POST['signup'])){
 			case 'hod':
                 $_SESSION[$email]=$email;
 				include('validate.php');
-				header("location:http://localhost/FAS/hodhome.php?username=$email");
+				header("location:hodhome.php?username=$email");
 				exit();
 			case 'teacher':
                 $_SESSION[$email]=$email;
 				include('validate.php');
-				header("location:http://localhost/FAS/subjectTeacherHome.php?username=$email");
+				header("location:subjectTeacherHome.php?username=$email");
 				exit();
 			case 'dqa':
                 $_SESSION[$email]=$email;
 				include('validate.php');
-				header("location:http://localhost/FAS/dqaHome.php?username=$email");
+				header("location:dqaHome.php?username=$email");
 				exit();
 			case 'auditor':
                 $_SESSION[$email]=$email;
 				include('validate.php');
-				header("location:http://localhost/FAS/audHome.php?username=$email");
+				header("location:audHome.php?username=$email");
 				exit();
             case 'extAuditor':
                     $_SESSION[$email]=$email;
                     include('validate.php');
-                    header("location:http://localhost/FAS/Users/externalAuditor/extAudHome.php?username=$email");
+                    header("location:Users/externalAuditor/extAudHome.php?username=$email");
                     exit();
 			default:
 			echo '<script type="text/javascript">'; 
 			echo 'alert("Invalid Credentials");'; 
-			echo 'window.open("http://localhost/FAS/login.php","_self");';
+			echo 'window.open("index.php","_self");';
 			echo '</script>';
 		}
 	
@@ -233,7 +233,7 @@ if(isset($_POST['signup'])){
     
    //if login now button click
     if(isset($_POST['login-now'])){
-        header('Location: login.php');
+        header('Location: index.php');
     }
 
     //if user click change password button in change password page

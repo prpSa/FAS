@@ -18,26 +18,26 @@ if ($total > 0) {
 
         if (strcmp($result['teacher'], "submitted") === 0) {
             echo '<a href="#" ><button id="editGrey">Edit the Form</button></a>';
-            echo '<a href="http://localhost/FAS/teaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="viewResponse">View Form</button></a>';
+            echo '<a href="teaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="viewResponse">View Form</button></a>';
             if (strcmp($result['dqa'], "Napproved") === 0) {
-                echo '<a href="http://localhost/FAS/dqaTeaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="dqaOrange">DQA Team</button></a>';
+                echo '<a href="dqaTeaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="dqaOrange">DQA Team</button></a>';
             }else{
                 echo '<a href="#" ><button id="dqaRed">DQA Team</button></a>';
             }
 
         } 
         else if(strcmp($result['teacher'], "Nsubmitted") === 0){
-            echo '<a href="http://localhost/FAS/editlab.php?username='.$username.'&courseID='. $courseID.'"" ><button id="editOrange">Edit the Form</button></a>';
-            echo '<a href="http://localhost/FAS/teaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="viewResponse">View Form I</button></a>';
+            echo '<a href="editlab.php?username='.$username.'&courseID='. $courseID.'"" ><button id="editOrange">Edit the Form</button></a>';
+            echo '<a href="teaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="viewResponse">View Form I</button></a>';
             if (strcmp($result['dqa'], "Napproved") === 0) {
-                echo '<a href="http://localhost/FAS/dqaTeaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="dqaOrange">DQA Team</button></a>';
+                echo '<a href="dqaTeaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="dqaOrange">DQA Team</button></a>';
             }else{
                 echo '<a href="#" ><button id="dqaRed">DQA Team</button></a>';
             }
         }
         else if(strcmp($result['teacher'], "approved") === 0){
-            echo '<a href="http://localhost/FAS/teaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="editGreen">Form I Approved </button></a>';
-            echo '<a href="http://localhost/FAS/dqaTeaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="dqaGreen">DQA Team</button></a>';
+            echo '<a href="teaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="editGreen">Form I Approved </button></a>';
+            echo '<a href="dqaTeaReslab.php?username='.$username.'&courseID='. $courseID.'" ><button id="dqaGreen">DQA Team</button></a>';
         }
     
         else if(strcmp($result['teacher'], "NULL") === 0){
@@ -57,7 +57,7 @@ if ($total > 0) {
         if ($totalll != 0) {
         // output data of each row
         while ($resulttt = mysqli_fetch_assoc($dataaa)) {
-        echo '<a href="http://localhost/FAS/hodTeaFeedlab.php?username='.$username.'&courseID='. $courseID.'" ><button id="hodGreen">HOD Response</button></a>';
+        echo '<a href="hodTeaFeedlab.php?username='.$username.'&courseID='. $courseID.'" ><button id="hodGreen">HOD Response</button></a>';
       
 
     }  
@@ -73,7 +73,7 @@ $totall = mysqli_num_rows($dataa);
 
 if ($totall > 0) {
     while ($resultt = mysqli_fetch_assoc($dataa)) {
-            echo '<a href="http://localhost/FAS/contlab.php?courseID='.$courseID.'&username='.$username.' " ><button id="viewResponsee">Continue Form</button></a>';
+            echo '<a href="contlab.php?courseID='.$courseID.'&username='.$username.' " ><button id="viewResponsee">Continue Form</button></a>';
 
     }
 }

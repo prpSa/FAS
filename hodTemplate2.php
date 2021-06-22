@@ -13,7 +13,7 @@
             echo '<a href="hodViewDoc.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="teaDocOrange">Audit I</button></a>';
 
             if (strcmp($result['intAudit'], "Napproved") === 0) {
-                echo '<a href="http://localhost/FAS/hodAudRes.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAudOrange">Internal Audit I</button></a>';
+                echo '<a href="hodAudRes.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAudOrange">Internal Audit I</button></a>';
             }else{
                 echo '<a href="#" ><button id="intAudRed">Internal Audit I</button></a>';
             }
@@ -21,7 +21,7 @@
         } 
         else if(strcmp($result['teacherInt'], "approved") === 0 && strcmp($result['audType'], "aud1") === 0){
             echo '<a href="hodViewDoc.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="teaDocGreen">Documents Approved</button></a>';
-            echo '<a href="http://localhost/FAS/hodAudRes.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAudGreen">Internal Audit I</button></a>';
+            echo '<a href="hodAudRes.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAudGreen">Internal Audit I</button></a>';
         
     
         }
@@ -35,7 +35,7 @@
             echo '<a href="hodViewDocII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="teaDocOrange">Docs Uploaded</button></a>';
 
             if (strcmp($result['intAuditII'], "Napproved") === 0) {
-                echo '<a href="http://localhost/FAS/hodAudResII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAud2Orange">Internal Auditor II</button></a>';
+                echo '<a href="hodAudResII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAud2Orange">Internal Auditor II</button></a>';
             }else{
                 echo '<a href="#" ><button id="intAud2Red">Internal Auditor II</button></a>';
             }

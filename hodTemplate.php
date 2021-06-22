@@ -9,18 +9,18 @@
         while($result=mysqli_fetch_assoc($data)) {
 
         if (strcmp($result['teacher'], "submitted") === 0 || strcmp($result['teacher'], "Nsubmitted") === 0) {
-            echo '<a href="http://localhost/FAS/hodTeaRes.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaOrange">Form submitted</button></a>';
+            echo '<a href="hodTeaRes.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaOrange">Form submitted</button></a>';
 
             if (strcmp($result['dqa'], "Napproved") === 0) {
-                echo '<a href="http://localhost/FAS/hodDqaRes.php?username='.$username.'&courseID='.$courseID.'" ><button id="dqaOrange">DQA Team</button></a>';
+                echo '<a href="hodDqaRes.php?username='.$username.'&courseID='.$courseID.'" ><button id="dqaOrange">DQA Team</button></a>';
             }else{
                 echo '<a href="#" ><button id="dqaRed">DQA Team</button></a>';
             }
 
         } 
         else if(strcmp($result['teacher'], "approved") === 0){
-            echo '<a href="http://localhost/FAS/hodTeaFinalRes.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaGreen">Form Approved</button></a>';
-            echo '<a href="http://localhost/FAS/hodDqaFinalRes.php?username='.$username.'&courseID='. $courseID.'"" ><button id="dqaGreen">DQA Team</button></a>';
+            echo '<a href="hodTeaFinalRes.php?username='.$username.'&courseID='.$courseID.'" ><button id="teaGreen">Form Approved</button></a>';
+            echo '<a href="hodDqaFinalRes.php?username='.$username.'&courseID='. $courseID.'"" ><button id="dqaGreen">DQA Team</button></a>';
         }
         else if(strcmp($result['teacher'], "NULL") === 0){
             echo'<button id="teaRed">Form not submitted</button>';
@@ -43,7 +43,7 @@
             echo '<a href="hodViewDoc.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="teaDocOrange">Audit I</button></a>';
 
             if (strcmp($result['intAudit'], "Napproved") === 0) {
-                echo '<a href="http://localhost/FAS/hodAudRes.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAudOrange">Internal Audit I</button></a>';
+                echo '<a href="hodAudRes.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAudOrange">Internal Audit I</button></a>';
             }else{
                 echo '<a href="#" ><button id="intAudRed">Internal Audit I</button></a>';
             }
@@ -51,7 +51,7 @@
         } 
         else if(strcmp($result['teacherInt'], "approved") === 0 && strcmp($result['audType'], "aud1") === 0){
             echo '<a href="hodViewDoc.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="teaDocGreen">Documents Approved</button></a>';
-            echo '<a href="http://localhost/FAS/hodAudRes.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAudGreen">Internal Audit I</button></a>';
+            echo '<a href="hodAudRes.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAudGreen">Internal Audit I</button></a>';
         
     
         }
@@ -66,7 +66,7 @@
             echo '<a href="hodViewDocII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="teaDocOrange">Docs Uploaded</button></a>';
 
             if (strcmp($result['intAuditII'], "Napproved") === 0) {
-                echo '<a href="http://localhost/FAS/hodAudResII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAud2Orange">Internal Auditor II</button></a>';
+                echo '<a href="hodAudResII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAud2Orange">Internal Auditor II</button></a>';
             }else{
                 echo '<a href="#" ><button id="intAud2Red">Internal Auditor II</button></a>';
             }
@@ -74,7 +74,7 @@
         } 
         else if(strcmp($result['teacherIntII'], "approved") === 0 && strcmp($result['audType'], "aud1") === 0){
             echo '<a href="hodViewDocII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="teaDocGreen">Documents Approved II</button></a>';
-            echo '<a href="http://localhost/FAS/hodAudResII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAud2Green">Internal Auditor II</button></a>';
+            echo '<a href="hodAudResII.php?username='.$username.'&courseID='.$courseID.'&division='.$division.'" ><button id="intAud2Green">Internal Auditor II</button></a>';
         
     
         }

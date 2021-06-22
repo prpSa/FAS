@@ -27,7 +27,7 @@
     <div id="navbarCollapse" class="collapse navbar-collapse">
  
         <div class="navbarLeft">
-        <a href="http://localhost/FAS/dqaHomelab.php?username=<?php echo $username; ?>"><img src="dylogo.png" style="width:10rem; height:4rem" ></a>
+        <a href="dqaHomelab.php?username=<?php echo $username; ?>"><img src="dylogo.png" style="width:10rem; height:4rem" ></a>
         </div>
 
         <div class="navbarCenter">
@@ -39,11 +39,11 @@
                 <li class="nav-item dropdown" >
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="font-size:1rem; font-weight:600"><?php echo $username;?></a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="http://localhost/FAS/dqaHomelab.php?username=<?php echo $username;?>" class="dropdown-item" style="font-size:1rem; font-weight:600"><i class="fas fa-home fa-sm fa-fw mr-2 text-gray-400"></i>Home Page</a>
-                        <a href="http://localhost/FAS/fasprofile/profile.php?username=<?php echo $username; ?>" class="dropdown-item" style="font-size:1rem; font-weight:600"><i class="fas fa-user-circle fa-sm fa-fw mr-2 text-gray-400"></i>Profile</a>
+                        <a href="dqaHomelab.php?username=<?php echo $username;?>" class="dropdown-item" style="font-size:1rem; font-weight:600"><i class="fas fa-home fa-sm fa-fw mr-2 text-gray-400"></i>Home Page</a>
+                        <a href="fasprofile/profile.php?username=<?php echo $username; ?>" class="dropdown-item" style="font-size:1rem; font-weight:600"><i class="fas fa-user-circle fa-sm fa-fw mr-2 text-gray-400"></i>Profile</a>
                         <a href="contactus.php?username=<?php echo $username;?>" class="dropdown-item" style="font-size:1rem; font-weight:600"><i class="fas fa-question-circle fa-sm fa-fw mr-2 text-gray-400"></i>Query</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="http://localhost/FAS/login.php" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout</a>
+                        <a class="dropdown-item" href="index.php" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout</a>
                     </div>
                 </li>
             </ul>
@@ -61,7 +61,7 @@
                     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a href="http://localhost/FAS/destroy.php"> <button name="logout_btn" class="btn btn-primary">Logout</button> </a>
+                        <a href="destroy.php"> <button name="logout_btn" class="btn btn-primary">Logout</button> </a>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
 
     <?php
          $username = $_GET['username'];?>
-      <a href="http://localhost/FAS/dqaHomelab.php?username=<?php echo $username;?>">  <input class="btn btn-success" style="margin:2rem 44% 1rem" type="submit" name="save" id="save" value="Back To Homepage"> </a>
+      <a href="dqaHomelab.php?username=<?php echo $username;?>">  <input class="btn btn-success" style="margin:2rem 44% 1rem" type="submit" name="save" id="save" value="Back To Homepage"> </a>
     
 
         

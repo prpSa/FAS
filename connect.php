@@ -26,7 +26,7 @@ $body = "Hi, \n\n\nThank you for writing to us.\nIt may take some time to respon
 $headers = "From: facultyauditsystem@gmail.com";
 
 if (mail($username, $subject, $body, $headers)) {
-  header('Location: http://localhost/FAS/contactus.php?username='.$username.'');
+  header('Location: contactus.php?username='.$username.'');
   exit;
 } else {
     echo "Email sending failed...";

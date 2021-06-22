@@ -56,13 +56,13 @@ if (isset($_POST['submit']) && !empty($_POST['submit'])) {
         if($mail->send()){
             echo '<script type="text/javascript">'; 
             echo 'alert("ThankYou for Your Response");'; 
-            echo 'window.open("http://localhost/FAS/dqaHome.php?username='.$username.'","_self");';
+            echo 'window.open("dqaHome.php?username='.$username.'","_self");';
             echo '</script>';
             exit();
         }else{
             echo '<script type="text/javascript">'; 
             echo 'alert("ThankYou for Your Response");'; 
-            echo 'window.open("http://localhost/FAS/dqaHome.php?username='.$username.'","_self");';
+            echo 'window.open("dqaHome.php?username='.$username.'","_self");';
             echo '</script>';
             exit();
         }

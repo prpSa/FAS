@@ -171,7 +171,7 @@ if(isset($_POST['save'])){
     if($sql_hod ==TRUE){
         echo '<script type="text/javascript">'; 
         echo 'alert("ThankYou for Your Response");'; 
-        echo 'window.open("http://localhost/FAS/teacherhome.php?username='.$username.'","_self");';
+        echo 'window.open("teacherhome.php?username='.$username.'","_self");';
         echo '</script>';
         exit;
     }

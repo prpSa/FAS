@@ -163,7 +163,7 @@ if (isset($_POST['save'])) {
         if($mail->send()){
             echo '<script type="text/javascript">'; 
             echo 'alert("ThankYou for Your Response");'; 
-            echo 'window.open("http://localhost/FAS/teacherhomelab.php?username='.$username.'","_self");';
+            echo 'window.open("teacherhomelab.php?username='.$username.'","_self");';
             echo '</script>';
             exit;
         }else{
@@ -304,7 +304,7 @@ if (isset($_POST['save'])) {
     if ($sql_hod == TRUE) {
         echo '<script type="text/javascript">'; 
         echo 'alert("ThankYou for Your Response");'; 
-        echo 'window.open("http://localhost/FAS/teacherhomelab.php?username='.$username.'","_self");';
+        echo 'window.open("teacherhomelab.php?username='.$username.'","_self");';
         echo '</script>';
         exit;
     }

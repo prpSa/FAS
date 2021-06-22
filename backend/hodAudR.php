@@ -24,13 +24,13 @@
             if($mail->send()){
                 echo '<script type="text/javascript">'; 
                 echo 'alert("ThankYou for Your Response");'; 
-                echo 'window.open("http://localhost/FAS/hodhome.php?username='.$username.'","_self");';
+                echo 'window.open("hodhome.php?username='.$username.'","_self");';
                 echo '</script>';
                 exit;
             }else{
                 echo '<script type="text/javascript">'; 
                 echo 'alert("ThankYou for Your Response");'; 
-                echo 'window.open("http://localhost/FAS/hodhome.php?username='.$username.'","_self");';
+                echo 'window.open("hodhome.php?username='.$username.'","_self");';
                 echo '</script>';
                 exit;
             }

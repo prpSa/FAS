@@ -13,13 +13,13 @@
             // ###################################################################################################
 
             if(strcmp($result['teacher'],"submitted")===0){
-                echo '<a href="http://localhost/FAS/dqaTeam.php?courseID='.$courseID.'&username='.$username.'" ><button id="teaOrange">Form submitted</button></a>';
+                echo '<a href="dqaTeam.php?courseID='.$courseID.'&username='.$username.'" ><button id="teaOrange">Form submitted</button></a>';
             }
             else if(strcmp($result['teacher'], "Nsubmitted") === 0){
                 echo '<a href="#" ><button id="teaGrey">Form submitted</button></a>';
             }
             else if(strcmp($result['teacher'], "approved") === 0){
-                echo '<a href="http://localhost/FAS/dqaFinalTeacherRes.php?courseID='.$courseID.'&username='.$username.'"><button id="teaGreen">Form Approved</button></a>';
+                echo '<a href="dqaFinalTeacherRes.php?courseID='.$courseID.'&username='.$username.'"><button id="teaGreen">Form Approved</button></a>';
             }
 
 
@@ -28,7 +28,7 @@
             // ###################################################################################################
 
 
-            echo '<a href="http://localhost/FAS/dqaTeaResFinalDqa.php?courseID='.$courseID.'&username='.$username.' " ><button id="viewForm">View Response</button></a>';
+            echo '<a href="dqaTeaResFinalDqa.php?courseID='.$courseID.'&username='.$username.' " ><button id="viewForm">View Response</button></a>';
 
 
 
@@ -51,7 +51,7 @@
                 //                                     Hod 
                 // ###################################################################################################
         
-                echo '<a href="http://localhost/FAS/hodDqaFeed.php?courseID='.$courseID.'&username='.$username.'" ><button id="button2">HOD Response</button></a>';
+                echo '<a href="hodDqaFeed.php?courseID='.$courseID.'&username='.$username.'" ><button id="button2">HOD Response</button></a>';
         
             }
         } else {
